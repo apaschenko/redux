@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*end reset*/
+
+html {
+  height: 100%;
+}
+
+body, .container-fluid, .app {
+  height: 100%;
+  min-height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.sidebar-main {
+  display: flex;
+  flex-grow: 0;
+  flex-flow: column nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-basis: 200px;
+  width: 100px;
+  height: 100%;
+  background-color: #eaf0f9;
+}
+
+.sidebar-btn, .sidebar-add-item-btn, .sidebar-toggle-btn, .tabs-btn {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+  border: none;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  margin: 2px;
+  white-space:nowrap;
+}
+
+.sidebar-btn {
+  color: #fff;
+  background-color: #6383a8;
+}
+
+.sidebar-btn:hover {
+  background-color: #6d8cb0
+}
+
+.sidebar-add-item-btn {
+  background-color: #588473;
+}
+
+.menu-0 {
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.menu-1 {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.menu-2 {
+  padding-left: 40px;
+  font-size: 12px;
+}
+
+.menu-3 {
+  padding-left: 60px;
+  font-size: 8px;
+}
+
+.menu-add-item {
+  padding-left: 0;
+  font-size: 12px;
+  color: #bdf9b1;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 0;
+  background-color: #f6fced;
+}
+
+.central-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.tabs-wrapper {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  flex-basis: 40px;
+  flex-grow: 0;
+  align-items: center;
+  padding: 0;
+  background-color: #eaf0f9;
+}
+
+.tabs-main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+}
+
+.tabs-btn {
+  margin: 0 2px;
+  color: #fff;
+  background-color: #588480;
+  font-size: 16px;
+}
+
+.tabs-btn:hover {
+  background-color: #6d8cb0
+}
+
+.sidebar-toggle-btn {
+  font-size: 16px;
+  color: #bdf9b1;
+  background-color: #588473;
+}
+
+.sidebar-toggle-btn:hover {
+  background-color: #6d8cb0
+}
+
+.none {
+  display: none;
+}
