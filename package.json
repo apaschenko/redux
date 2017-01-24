@@ -1,12 +1,12 @@
 {
-  "name": "redux-ru-tutorial",
+  "name": "redux-test",
   "version": "1.0.0",
-  "description": "Redux RU tutorial",
+  "description": "Redux Test",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Maxim Patsianskiy",
+  "author": "A Paschenko",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.1",
